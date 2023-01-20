@@ -1,0 +1,29 @@
+to make controller 
+
+starting in the server.js 
+where we created the route for the user ---
+app.use('/', require('./routes/root'))
+app.use('/users', require('./routes/userRoutes'))
+
+then we went to the route directory and 
+we created user routes JS and then 
+router.route('/')
+    .get(usersController.getAllUsers)
+    .post(usersController.createNewUser)
+    .patch(usersController.updateUser)
+    .delete(usersController.deleteUser)
+
+then we created the controlelrs directory and 
+we added the usersController.js
+
+
+
+
+
+
+
+
+
+
+
+
